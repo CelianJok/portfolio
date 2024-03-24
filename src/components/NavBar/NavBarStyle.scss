@@ -1,0 +1,66 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 47px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    padding: 8px;
+    font-size: 20px;
+    margin: 30px;
+
+    .navItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+
+        img {
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    div a.active {
+        font-weight: bold;
+        span {
+            background-color: lightskyblue;
+            width: 60px;
+            border-radius: 50px;
+        }
+    }
+
+    div {
+        &:hover {
+            span {
+                background-color: lightgray;
+                width: 60px;
+                border-radius: 50px;
+            }
+        }
+    }
+
+    .accueil a.active {
+        img {
+            content: url(./images/Accueil-active.png);
+        }
+    }
+
+    .formation a.active {
+        img {
+            content: url(./images/Formation-active.png);
+        }
+    }
+
+    .projets a.active {
+        img {
+            content: url(./images/Projets-active.png);
+        }
+    }
+
+    .contact a.active {
+        img {
+            content: url(./images/Contact-active.png);
+        }
+    }
+}

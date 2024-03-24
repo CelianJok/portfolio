@@ -1,33 +1,41 @@
 import { NavLink } from "react-router-dom";
-import './NavBarStyles.scss';
+import './NavBarStyle.scss';
 
 function NavBar() {
     return(
         <nav>
             <div className="accueil">
                 <NavLink className={"navItem"} to="/">
-                    <img src={"src/components/NavBar/Accueil.png"} alt="Image d'accueil" />
+                    <span>
+                        <img src={"src/components/NavBar/images/Accueil.png"} alt="Icône d'accueil" />
+                    </span>
                     Accueil
                 </NavLink>
             </div>
 
-            <div className="parcours">
-                <NavLink className={"navItem"} to="/parcours">
-                    <img src={"src/components/NavBar/Parcours.png"} alt="Image de parcours" />
-                    Mon parcours
+            <div className="formation">
+                <NavLink className={"navItem"} to="/formation">
+                    <span>
+                        <img src={"src/components/NavBar/images/Formation.png"} alt="Icône de formation" />
+                    </span>
+                    Ma formation
                 </NavLink>
             </div>
 
             <div className="projets">
                 <NavLink className={"navItem"} to="/projets">
-                    <img src={"src/components/NavBar/Projets.png"} alt="Image de projets" />
+                    <span>
+                        <img src={"src/components/NavBar/images/Projets.png"} alt="Icône de projets" />
+                    </span>
                     Mes projets
                 </NavLink>
             </div>
 
             <div className="contact">
                 <NavLink className={"navItem"} to="/contact">
-                    <img src={"src/components/NavBar/Contact.png"} alt="Image de contact" />
+                    <span>
+                        <img src={"src/components/NavBar/images/Contact.png"} alt="Icône de contact" />
+                    </span>
                     Me contacter
                 </NavLink>
             </div>

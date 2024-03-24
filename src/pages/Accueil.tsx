@@ -1,3 +1,12 @@
+import HeaderAccueil from "../components/Accueil/Header/HeaderAccueil";
+import Compétences from "../components/Accueil/Compétences/Compétences";
+
 export function Accueil() {
-    return <h1>Accueil</h1>
+    return (
+        <>
+            <HeaderAccueil />
+            <Compétences />
+        </>
+    )
+    
 }
