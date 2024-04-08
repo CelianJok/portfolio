@@ -9,30 +9,55 @@ function Compétences() {
                 <div>
                     <h3>Langages de programmation</h3>
                     <ul>
-                        <li>
-                            <img src={"src/components/Accueil/Compétences/images/Java.png"} alt="Icône de Java" />
-                            Java
-                        </li>
+                        
                         <li>
                             <img src={"src/components/Accueil/Compétences/images/Kotlin.png"} alt="Icône de Kotlin" />
-                            Kotlin
+
+                            <div className='progressBar'>
+                                <span id='kotlin'></span>
+                            </div>
                         </li>
+
+                        <li>
+                            <img src={"src/components/Accueil/Compétences/images/Java.png"} alt="Icône de Java" />
+
+                            <div className='progressBar'>
+                                <span id='java'></span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <img src={"src/components/Accueil/Compétences/images/React.png"} alt="Icône de React" />
+                            
+
+                            <div className='progressBar'>
+                                <span id='react'></span>
+                            </div>
+                        </li>
+
                         <li>
                             <img src={"src/components/Accueil/Compétences/images/HTML5.png"} alt="Icône de HTML5" />
-                            HTML5
+
+                            <div className='progressBar'>
+                                <span id='html5'></span>
+                            </div>
                         </li>
                         <li>
                             <img src={"src/components/Accueil/Compétences/images/CSS3.png"} alt="Icône de CSS3" />
-                            CSS3
+
+                            <div className='progressBar'>
+                                <span id='css3'></span>
+                            </div>
                         </li>
-                        <li>
-                            <img src={"src/components/Accueil/Compétences/images/React.png"} alt="Icône de React" />
-                            React
-                        </li>
+                        
                         <li>
                             <img src={"src/components/Accueil/Compétences/images/Python.png"} alt="Icône de Python" />
-                            Python
+
+                            <div className='progressBar'>
+                                <span id='python'></span>
+                            </div>
                         </li>
+                        
                     </ul>
                 </div>
                 
@@ -41,11 +66,17 @@ function Compétences() {
                     <ul>
                         <li>
                             <img src={"src/components/Accueil/Compétences/images/PostgreSQL.png"} alt="Icône de PostgreSQL" />
-                            PostgreSQL
+
+                            <div className='progressBar'>
+                                <span id='postgresql'></span>
+                            </div>
                         </li>
                         <li>
                             <img src={"src/components/Accueil/Compétences/images/SQLite.png"} alt="Icône de SQLite" />
-                            SQLite
+
+                            <div className='progressBar'>
+                                <span id='sqlite'></span>
+                            </div>
                         </li>
                     </ul>
                 </div>
