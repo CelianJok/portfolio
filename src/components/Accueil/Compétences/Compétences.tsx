@@ -96,7 +96,7 @@ function Compétences() {
                     </li>
                     <li>
                         <img src={"src/components/Accueil/Compétences/images/Allemagne.jpg"} alt="Icône du drapeau allemand" />
-                        Allemande : Niveau LV2
+                        Allemand : Niveau LV2
                     </li>
                 </ul>
             </div>       
