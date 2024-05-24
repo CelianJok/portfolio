@@ -4,14 +4,19 @@ import './ModalProject.scss';
 type PropTypes = {
     open: boolean;
     onClose: () => void;
+    project?: { title: string; description: string; box: string };
 }
 
-const Modal: React.FC<PropTypes> = ({ open, onClose }) => {
+const Modal: React.FC<PropTypes> = ({ open, onClose, project }) => {
 
     return (
         <div className="modalProject" style={{display: open ? 'block' : 'none'}}>
-            <h1>Test</h1>
-            <p>Salut c'est moi le test</p>
+            {project && ( // Vérifier si project est défini avant de rendre son contenu
+                <>
+                    <h1>{project.title}</h1>
+                    <p>{project.description}</p>
+                </>
+            )}
             <button type="button" onClick={onClose}>Fermer</button>
         </div>
     );
