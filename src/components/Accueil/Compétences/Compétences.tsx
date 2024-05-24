@@ -6,7 +6,7 @@ function Compétences() {
 
             <h2>Compétences informatiques</h2>
             <div className='Info'>
-                <div>
+                <div className='container'>
                     <h3>Langages de programmation</h3>
                     <ul>
                         
@@ -61,7 +61,7 @@ function Compétences() {
                     </ul>
                 </div>
                 
-                <div>
+                <div className='container'>
                     <h3>Base de données</h3>
                     <ul>
                         <li>

@@ -5,6 +5,14 @@
     padding-bottom: 10px;
     color: white;
 
+    .container {
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
     .Info {
         display: flex;
         flex-direction: row;
@@ -42,6 +50,12 @@
     }
 
     .Langues {
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+        
         ul:last-child {
             margin-bottom: 0;
         }

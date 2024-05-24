@@ -1,0 +1,64 @@
+.Projets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin: 0 auto;
+    background-image: url("src/components/Projets/images/Fond.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .projetsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+
+        .largeBox {
+            width: calc(20px + 90vmin);
+            height: calc(20px + 30vmin);
+            padding: calc(1px + 1vmin);
+            margin: calc(1px + 2vmin);
+            box-shadow: 2px 0px 5px rgba(0,0,0,0.7);
+            background: rgba(0,0,0,0.4);
+            overflow: hidden;
+            border-radius: 10px;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    
+        .smallBox {
+            width: calc(20px + 40vmin);
+            height: calc(20px + 30vmin);
+            margin: calc(1px + 2vmin);
+            padding: calc(1px + 1vmin);
+            box-shadow: 2px 0px 5px rgba(0,0,0,0.7);
+            background: rgba(0,0,0,0.4);
+            overflow: hidden;
+            border-radius: 10px;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+
+        .test {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+          
+            top: 50%;
+            left: 50%;
+            right: auto;
+            bottom: auto;
+          
+            transform: translate(-50%, -50%);
+          } 
+          
+    }
+}

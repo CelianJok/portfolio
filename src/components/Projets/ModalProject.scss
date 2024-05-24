@@ -1,0 +1,13 @@
+.modalProject {
+    color: black;
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 90%;
+    height: 90%;
+    bottom: 5%;
+    left: 5%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px); 
+} 
