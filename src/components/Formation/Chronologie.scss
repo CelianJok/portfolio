@@ -1,17 +1,6 @@
-/*
-.bzKFtd {
-    justify-content: left !important;
-}
-
-.iiIORr {
-    margin: 0 !important;
-    padding: 0.5rem 0 0.5rem 0.5rem !important;
-}
-*/
-
 * {
     box-sizing: border-box;
-  }
+}
 
 .Chronologie {
     color: white;
@@ -107,6 +96,10 @@
         img {
             max-width: 100%;
             border-radius: 10px;
+        }
+
+        p {
+            text-align: justify;
         }
     }
 }

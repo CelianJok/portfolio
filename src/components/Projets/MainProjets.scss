@@ -15,6 +15,10 @@
         flex-direction: row;
         justify-content: center;
 
+        h2 {
+            margin-top: 10px;
+        }
+
         .largeBox {
             width: calc(20px + 90vmin);
             height: calc(20px + 30vmin);
@@ -25,6 +29,7 @@
             overflow: hidden;
             border-radius: 10px;
             transition: all .2s ease-in-out;
+            cursor: pointer;
 
             &:hover {
                 transform: scale(1.02);
@@ -41,24 +46,45 @@
             overflow: hidden;
             border-radius: 10px;
             transition: all .2s ease-in-out;
+            cursor: pointer;
 
             &:hover {
                 transform: scale(1.02);
             }
         }
 
-        .test {
-            position: absolute;
-            width: 50%;
-            height: 50%;
-          
-            top: 50%;
-            left: 50%;
-            right: auto;
-            bottom: auto;
-          
-            transform: translate(-50%, -50%);
-          } 
+        .headerBox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 5px 10px 0px 10px;
+
+            span {
+                display: flex;
+                justify-content: center;
+                border-radius: 50px;
+                align-items: center;
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            .spanDate {
+                background: rgba(2, 112, 180, 0.4);
+                padding: 0px 15px 0px 15px;
+            }
+
+            .spanPerso {
+                background: rgba(235, 56, 16, 0.4);
+                padding: 5px 15px 5px 15px;
+            }
+
+            .spanAca {
+                background: rgba(16, 177, 62, 0.4);
+                padding: 5px 15px 5px 15px;
+            }
+        }
           
     }
 }

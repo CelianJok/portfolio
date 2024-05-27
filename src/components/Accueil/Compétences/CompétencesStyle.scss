@@ -2,7 +2,7 @@
     text-align: center;
     background-image: url("src/components/Accueil/Compétences/images/Fond.jpg");
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
     color: white;
 
     .container {
@@ -34,6 +34,15 @@
     .Langues {
         display: inline-flex;
         justify-content: center;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+        
+        ul:last-child {
+            margin-bottom: 0;
+        }
 
         img {
             height: 18px;
@@ -47,18 +56,6 @@
         padding: 0px 20px 0px 20px;
         background-color: rgba(0, 0, 0, 0.4);
         width: 300px;
-    }
-
-    .Langues {
-        transition: all .2s ease-in-out;
-
-        &:hover {
-            transform: scale(1.02);
-        }
-        
-        ul:last-child {
-            margin-bottom: 0;
-        }
     }
 
     ul {

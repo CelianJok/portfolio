@@ -1,5 +1,5 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import { Accueil } from './pages/Accueil';
 import { Formation } from './pages/Formation';
@@ -9,6 +9,7 @@ import './App.scss'
 
 function App() {
   const [open, setOpen] = React.useState(false);
+  const { pathname } = useLocation();
 
   React.useEffect(() => {
     const body = document.querySelector('body');
@@ -22,13 +23,20 @@ function App() {
     }
   }, [open]);
 
+  // Me ramener en haut de chaque page lors de la navigation
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+
   return (
     <>
+    
       <header>
         <NavBar/>
       </header>
 
-      <main>
+      <main style={{marginTop: '100px'}}>
         <div>
           <Routes>
             <Route path="/" element={<Accueil/>}/>

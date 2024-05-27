@@ -1,11 +1,14 @@
 import './MainProjets.scss';
 import * as React from 'react';
 import Modal from './ModalProject';
+import ReadMore from './ReadMore.tsx'
 
 interface Project {
     title: string;
     description: string;
     box: string;
+    date: string;
+    type: string;
   }
 
 interface MainProjetsProps {
@@ -20,31 +23,41 @@ export default function MainProjets({ open, setOpen }: MainProjetsProps) {
         { 
             title: "BuJo",
             description: "BuJo est une application mobile sur Android de To-Do List et de journal intime que je développe depuis maintenant 2023. J'ai utilisé comme outils de développement Android Studio couplé avec le langage de programmation Kotlin, le framework natif Jetpack Compose et la bibliothèque Room qui utilise SQLite. BuJo est mon plus gros projet personnel dans le domaine de l'informatique jusqu'à aujourd'hui.",
-            box: 'largeBox'
+            box: 'largeBox',
+            date: '2024',
+            type: 'Personnel'
         },
         {
             title: "PorteTaFeuille",
             description: "J'ai rejoint le projet personnel d'un ami qui développait déjà sa propre application mobile en lien avec un portefeuille bancaire numérique. J'ai été assigné au développement de l'insertion des dates dans les transactions ainsi que les fréquences d'une transaction (Une seule fois, une fois par semaine etc...). Nous utilisons le langage de programmation Kotlin, les bibliothèques Android Compose et Room. Pour la base de données, nous stockons sur le téléphone directement.",
-            box: 'smallBox'
+            box: 'smallBox',
+            date: '2024',
+            type: 'Personnel'
         },
         {
             title: "Classification automatique",
             description: "Pendant toute une semaine, nous avons travaillé en binôme sur projet de groupe dans le cadre d'une SAE durant notre première année de BUT informatique. Le but était de concevoir un programme fiable et rapide d'exécution qui classifie automatiquement des dépêches qui nous étaient données. Ainsi, ce modèle était une amorce dans la création d'une intelligence artificielle.",
-            box: 'smallBox'
+            box: 'smallBox',
+            date: '2023',
+            type: 'Académique'
         },
         {
             title: "Site web institutionnel pour Atos",
             description: "Lors d'une séance de SAE au premier semestre de l'année de BUT, nous avons réunis le maximum d'informations sur l'entreprise Atos avec un groupe de quatre personnes, que ce soit au niveau de l'organisation de l'entreprise, de sa politique économique ou encore écologique. Nous avons ensuite établit un recueil de besoins grâce à ces informations. Par la suite, nous avions plusieurs séances pour réaliser une maquette d'un site web vitrine d'Atos à l'égard d'élèves de Troisième en recherche d'un stage, site que nous avons dû développer de A à Z en HTML/CSS en se basant sur la maquette.",
-            box: 'largeBox'
+            box: 'largeBox',
+            date: '2023',
+            type: 'Académique'
         },
         {
             title: "Jeu de l'oie",
             description: "Le jeu de l'oie est un projet de groupe réalisé dans le cadre de la spécialité Numérique et Sciences informatiques (NSI) en Première. Nous étions quatre à développer le célèbre jeu de société du même nom grâce à la bibliothèque Pygame en Python. Le jeu se jouait au tour-par-tour, et un total de quatre joueurs étaient permis sur un même ordinateur.",
-            box: 'largeBox'
+            box: 'largeBox',
+            date: '2022',
+            type: 'Académique'
         }
     ];
 
-    const handleOpen = (project: { title: string, description: string, box: string }) => {
+    const handleOpen = (project: { title: string, description: string, box: string, date: string, type: string }) => {
         setSelectedProject(project);
         setOpen(true);
     };
@@ -54,13 +67,22 @@ export default function MainProjets({ open, setOpen }: MainProjetsProps) {
     };  
   
     return (
-        <div className='Projets'>
+      <div className='Projets'>
         <h1>Mes projets</h1>
         <div className='projetsContainer'>
           {projects.map((project, index) => (
             <div key={index} className={project.box} onClick={() => handleOpen(project)}>
+              <div className='headerBox'>
+                <span className='spanDate'>
+                  <p>{project.date}</p>
+                </span>
+
+                <span className={project.type == 'Personnel' ? 'spanPerso' : 'spanAca'}>
+                  <p>{project.type}</p>
+                </span>
+              </div>
               <h2>{project.title}</h2>
-              <p>{project.description}</p>
+              <ReadMore>{project.description}</ReadMore>
             </div>
           ))}
         </div>
