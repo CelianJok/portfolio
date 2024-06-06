@@ -26,6 +26,16 @@ nav {
     }
 
     div {
+        span {
+            display: flex;
+            justify-content: center;
+            padding: 2px 5px 2px 5px;   
+            background-color: transparent;
+            width: 60px;
+            border-radius: 50px;
+            animation: none;
+        }
+
         & a.active {
             font-weight: bold;
             span {
@@ -36,6 +46,12 @@ nav {
                 width: 60px;
                 border-radius: 50px;
                 animation: none;
+            }
+
+            &:hover {
+                span {
+                    background-color: rgb(100, 195, 255);
+                }
             }
         }
 

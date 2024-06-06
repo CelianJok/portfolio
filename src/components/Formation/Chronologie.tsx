@@ -9,7 +9,10 @@ export default function Chronologie() {
           <div className='content'>
             <h2>1ère année de BUT Informatique</h2>
             <h3>IUT2 - Grenoble</h3>
-            <p>Je suis actuellement en 1ère année de BUT Informatique à l'IUT2 de Grenoble.</p>
+            <p>Je suis actuellement en 1ère année de BUT Informatique à l'IUT2 de Grenoble.
+              J'ai l'intention de choisir pour l'année prochaine le parcours A : Réalisation
+              d'applications : conception, développement, validation.
+            </p>
             <img src="src/components/Formation/images/iut2.jpg" alt="" />
           </div>
         </div>

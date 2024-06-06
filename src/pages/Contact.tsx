@@ -1,3 +1,9 @@
+import Formulaire from "../components/Contact/Formulaire";
+
 export function Contact() {
-    return <h1>Me contacter</h1>
+    return (
+        <>
+            <Formulaire />            
+        </>
+    )
 }
