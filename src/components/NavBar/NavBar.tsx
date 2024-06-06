@@ -7,7 +7,7 @@ function NavBar() {
             <div className="accueil">
                 <NavLink className={"navItem"} end to="/portfolio/">
                     <span>
-                        <img src={"./images/Accueil.png"} alt="Icône d'accueil" />
+                        <img src={"src/components/NavBar/images/Accueil.png"} alt="Icône d'accueil" />
                     </span>
                     Accueil
                 </NavLink>
