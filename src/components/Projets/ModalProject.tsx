@@ -26,7 +26,7 @@ const Modal: React.FC<PropTypes> = ({ open, onClose, project }) => {
                 <>
                     <div className={'close'}>
                         <span>
-                            <img src={"src/components/Projets/images/Fermer.png"} alt="Icône de fermeture" onClick={onClose} />
+                            <img src={"Projets/images/Fermer.png"} alt="Icône de fermeture" onClick={onClose} />
                         </span>
                     </div>
                     <div>
@@ -37,7 +37,7 @@ const Modal: React.FC<PropTypes> = ({ open, onClose, project }) => {
                     <p>{project.description}</p>
                     <div className="images">
                         {project.images.map((image, index) => (
-                        <img key={index} src={'src/components/Projets/images' + image} alt={project.title} />
+                        <img key={index} src={'Projets/images' + image} alt={project.title} />
                         ))}
                     </div>
                 </>

@@ -13,7 +13,7 @@ export default function Chronologie() {
               J'ai l'intention de choisir pour l'année prochaine le parcours A : Réalisation
               d'applications : conception, développement, validation.
             </p>
-            <img src="src/components/Formation/images/iut2.jpg" alt="" />
+            <img src="Formation/images/iut2.jpg" alt="" />
           </div>
         </div>
 
@@ -34,7 +34,7 @@ export default function Chronologie() {
             <p>Durant ma scolarité au lycée, j'ai choisi en Première les spécialités Mathématiques, 
               Physique-Chimie ainsi que Numérique et Sciences Informatiques (NSI). 
               En Terminale, j'ai abandonné la Physique-Chimie et décidé de prendre l'option Mathématiques Expertes.</p>
-            <img src="src/components/Formation/images/lfb.jpg" alt="" />
+            <img src="Formation/images/lfb.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@ export default function Chronologie() {
             <h2>Brevet Mention Très Bien</h2>
             <h3>Collège Joseph Chassigneux - Vinay</h3>
             <p>J'ai obtenu mon brevet des collèges avec mention Très Bien au collège Joseph Chassigneux à Vinay.</p>
-            <img src="src/components/Formation/images/cjc.jpg" alt="" />
+            <img src="Formation/images/cjc.jpg" alt="" />
           </div>
         </div>
 

@@ -7,7 +7,7 @@ function NavBar() {
             <div className="accueil">
                 <NavLink className={"navItem"} end to="/portfolio/">
                     <span>
-                        <img src={"src/components/NavBar/images/Accueil.png"} alt="Icône d'accueil" />
+                        <img src={"NavBar/images/Accueil.png"} alt="Icône d'accueil" />
                     </span>
                     Accueil
                 </NavLink>
@@ -16,7 +16,7 @@ function NavBar() {
             <div className="formation">
                 <NavLink className={"navItem"} to="/portfolio/formation">
                     <span>
-                        <img src={"src/components/NavBar/images/Formation.png"} alt="Icône de formation" />
+                        <img src={"NavBar/images/Formation.png"} alt="Icône de formation" />
                     </span>
                     Ma formation
                 </NavLink>
@@ -25,7 +25,7 @@ function NavBar() {
             <div className="projets">
                 <NavLink className={"navItem"} to="/portfolio/projets">
                     <span>
-                        <img src={"src/components/NavBar/images/Projets.png"} alt="Icône de projets" />
+                        <img src={"NavBar/images/Projets.png"} alt="Icône de projets" />
                     </span>
                     Mes projets
                 </NavLink>
@@ -34,7 +34,7 @@ function NavBar() {
             <div className="contact">
                 <NavLink className={"navItem"} to="/portfolio/contact">
                     <span>
-                        <img src={"src/components/NavBar/images/Contact.png"} alt="Icône de contact" />
+                        <img src={"NavBar/images/Contact.png"} alt="Icône de contact" />
                     </span>
                     Me contacter
                 </NavLink>

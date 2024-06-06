@@ -70,25 +70,25 @@ nav {
 
     .accueil a.active {
         img {
-            content: url(./images/Accueil-active.png);
+            content: url(NavBar/images/Accueil-active.png);
         }
     }
 
     .formation a.active {
         img {
-            content: url(./images/Formation-active.png);
+            content: url(NavBar/images/Formation-active.png);
         }
     }
 
     .projets a.active {
         img {
-            content: url(./images/Projets-active.png);
+            content: url(NavBar/images/Projets-active.png);
         }
     }
 
     .contact a.active {
         img {
-            content: url(./images/Contact-active.png);
+            content: url(NavBar/images/Contact-active.png);
         }
     }
 }

@@ -31,7 +31,7 @@ export default function Formulaire() {
     return (
         <div className='Contact'>
             <div className='formulaire'>
-                <img src={"src/components/Contact/images/Contact.jpg"} alt="Image de contact" />
+                <img src={"Contact/images/Contact.jpg"} alt="Image de contact" />
                 <form onSubmit={onSubmit}>
                     <h1>Me contacter</h1>
                     <input type="text" id="nom" name="nom" placeholder="Nom" required />

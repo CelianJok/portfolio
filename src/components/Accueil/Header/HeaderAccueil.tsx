@@ -4,7 +4,7 @@ function HeaderAccueil() {
     return (
         <div className='HeaderAccueil'>
             <div>
-                <img src={"/Header/images/Moi.jpg"} alt="Photo de moi" />
+                <img src={"Accueil/Header/images/Moi.jpg"} alt="Photo de moi" />
             </div>
 
             <div className='presentation'>
@@ -20,13 +20,13 @@ function HeaderAccueil() {
                 </p>
                 <div className='contact'>
                     <a title='CelianJok' href="https://github.com/CelianJok" target='_blank'>
-                        <img src={"src/components/Accueil/Header/images/Github.png"} alt="Image de Github" />
+                        <img src={"Accueil/Header/images/Github.png"} alt="Image de Github" />
                     </a>
                     <a title='Celian.Granjon@etu.univ-grenoble-alpes.fr' href="mailto: Celian.Granjon@etu.univ-grenoble-alpes.fr" target='_blank'>
-                        <img src={"src/components/Accueil/Header/images/Mail.png"} alt="Image de mail" />
+                        <img src={"Accueil/Header/images/Mail.png"} alt="Image de mail" />
                     </a>
                     <a title='06 13 89 90 94' href="tel: 06 13 89 90 94" target='_blank'>
-                        <img src={"src/components/Accueil/Header/images/Tel.png"} alt="Image de téléphone" />
+                        <img src={"Accueil/Header/images/Tel.png"} alt="Image de téléphone" />
                     </a>
                 </div>
             </div>

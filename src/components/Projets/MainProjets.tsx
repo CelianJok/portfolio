@@ -108,7 +108,7 @@ export default function MainProjets({ open, setOpen }: MainProjetsProps) {
               <h2>{project.title}</h2>
               <div className='mainImages'>
                 {project.mainImage.map((image, index) => (
-                  <img key={index} src={'src/components/Projets/images' + image} alt={project.title} className={getImageClassName(project.title)} />
+                  <img key={index} src={'Projets/images' + image} alt={project.title} className={getImageClassName(project.title)} />
                 ))}
               </div>
               <p>{project.description}</p>
