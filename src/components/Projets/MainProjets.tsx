@@ -1,7 +1,6 @@
 import './MainProjets.scss';
 import * as React from 'react';
 import Modal from './ModalProject';
-import ReadMore from './ReadMore.tsx'
 
 interface Project {
     title: string;
