@@ -5,7 +5,7 @@ function NavBar() {
     return(
         <nav>
             <div className="accueil">
-                <NavLink className={"navItem"} to="/">
+                <NavLink className={"navItem"} to="/portfolio/">
                     <span>
                         <img src={"src/components/NavBar/images/Accueil.png"} alt="Icône d'accueil" />
                     </span>
@@ -14,7 +14,7 @@ function NavBar() {
             </div>
 
             <div className="formation">
-                <NavLink className={"navItem"} to="/formation">
+                <NavLink className={"navItem"} to="/portfolio/formation">
                     <span>
                         <img src={"src/components/NavBar/images/Formation.png"} alt="Icône de formation" />
                     </span>
@@ -23,7 +23,7 @@ function NavBar() {
             </div>
 
             <div className="projets">
-                <NavLink className={"navItem"} to="/projets">
+                <NavLink className={"navItem"} to="/portfolio/projets">
                     <span>
                         <img src={"src/components/NavBar/images/Projets.png"} alt="Icône de projets" />
                     </span>
@@ -32,7 +32,7 @@ function NavBar() {
             </div>
 
             <div className="contact">
-                <NavLink className={"navItem"} to="/contact">
+                <NavLink className={"navItem"} to="/portfolio/contact">
                     <span>
                         <img src={"src/components/NavBar/images/Contact.png"} alt="Icône de contact" />
                     </span>
