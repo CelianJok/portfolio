@@ -1,0 +1,103 @@
+nav {
+    position: fixed;
+    z-index: 2;
+    top: 2%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 47px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    padding: 8px;
+    font-size: 20px;
+    background-color: white;
+
+    .navItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+
+        img {
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    div {
+        span {
+            display: flex;
+            justify-content: center;
+            padding: 2px 5px 2px 5px;   
+            background-color: transparent;
+            width: 60px;
+            border-radius: 50px;
+            animation: none;
+        }
+
+        & a.active {
+            font-weight: bold;
+            span {
+                display: flex;
+                justify-content: center;
+                padding: 2px 5px 2px 5px;   
+                background-color: lightskyblue;
+                width: 60px;
+                border-radius: 50px;
+                animation: none;
+            }
+
+            &:hover {
+                span {
+                    background-color: rgb(100, 195, 255);
+                }
+            }
+        }
+
+        &:hover {
+            span {
+                display: flex;
+                justify-content: center;
+                padding: 2px 5px 2px 5px;       
+                background-color: lightgray;
+                width: 60px;
+                border-radius: 50px;
+                animation: expand 0.3s forwards;
+            }
+        }
+    }
+
+    .accueil a.active {
+        img {
+            content: url(./images/Accueil-active.png);
+        }
+    }
+
+    .formation a.active {
+        img {
+            content: url(./images/Formation-active.png);
+        }
+    }
+
+    .projets a.active {
+        img {
+            content: url(./images/Projets-active.png);
+        }
+    }
+
+    .contact a.active {
+        img {
+            content: url(./images/Contact-active.png);
+        }
+    }
+}
+
+@keyframes expand {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 60px;
+    }
+}

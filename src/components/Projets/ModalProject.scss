@@ -1,0 +1,90 @@
+.modalProject {
+    color: black;
+    display: none;
+    position: fixed;
+    z-index: 3;
+    width: 90%;
+    height: 90%;
+    bottom: 5%;
+    left: 5%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px); 
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    overflow-y: auto;
+
+    h1 {
+        margin-top: 0px;
+    }
+    
+    p {
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+
+    .images {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    .close {
+
+        span {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+
+            img {
+                width: 30px;
+            }
+
+            &:hover {
+                background-color: lightgray;
+                border-radius: 50px;
+                width: 30px;
+            }
+            
+        }
+        
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5px 10px 0px 10px;
+
+        span {
+            display: flex;
+            justify-content: center;
+            border-radius: 50px;
+            align-items: center;
+        }
+
+        .spanDate {
+            background: rgba(2, 112, 180, 0.4);
+            padding: 0px 15px 0px 15px;
+        }
+
+        .spanPerso {
+            background: rgba(235, 56, 16, 0.4);
+            padding: 5px 15px 5px 15px;
+        }
+
+        .spanAca {
+            background: rgba(16, 177, 62, 0.4);
+            padding: 5px 15px 5px 15px;
+        }
+    }
+} 
