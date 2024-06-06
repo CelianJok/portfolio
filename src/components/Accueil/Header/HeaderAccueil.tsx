@@ -4,7 +4,7 @@ function HeaderAccueil() {
     return (
         <div className='HeaderAccueil'>
             <div>
-                <img src={"src/components/Accueil/Header/images/Moi.jpg"} alt="Photo de moi" />
+                <img src={"./images/Moi.jpg"} alt="Photo de moi" />
             </div>
 
             <div className='presentation'>
