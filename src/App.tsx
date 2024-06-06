@@ -39,10 +39,10 @@ function App() {
       <main style={{marginTop: '100px'}}>
         <div>
           <Routes>
-            <Route path="/" element={<Accueil/>}/>
-            <Route path="/formation" element={<Formation/>}/>
-            <Route path="/projets" element={<Projets open={open} setOpen={setOpen} />}/>
-            <Route path="/contact" element={<Contact/>}/>
+            <Route path="/portfolio/" element={<Accueil/>}/>
+            <Route path="/portfolio/formation" element={<Formation/>}/>
+            <Route path="/portfolio/projets" element={<Projets open={open} setOpen={setOpen} />}/>
+            <Route path="/portfolio/contact" element={<Contact/>}/>
 
           </Routes>
         </div>
