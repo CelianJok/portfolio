@@ -1,12 +1,5 @@
 .HeaderAccueil {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
     //background-color: rgba(3, 138, 255, .1);
-    padding-top: 20px;
     padding-bottom: 60px;
 
     img {
@@ -14,11 +7,22 @@
         border-radius: 20px;
     }
 
+    .presentationParent {
+        background-image: url("./images/Fond.png");
+        background-repeat: no-repeat;
+        background-size: cover;    
+        height: 100vh;
+        //width: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .presentation {
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        margin-top: 60px;
         h1 {
             font-size: 60px;
             margin-bottom: 0px;

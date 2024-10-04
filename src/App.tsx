@@ -36,7 +36,7 @@ function App() {
         <NavBar/>
       </header>
 
-      <main style={{marginTop: '100px'}}>
+      <main>
         <div>
           <Routes>
             <Route path="/portfolio/" element={<Accueil/>}/>

@@ -1,6 +1,8 @@
 import './MainProjets.scss';
 import * as React from 'react';
 import Modal from './ModalProject';
+import "animate.css/animate.compat.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 interface Project {
     title: string;
@@ -94,27 +96,51 @@ export default function MainProjets({ open, setOpen }: MainProjetsProps) {
       <div className='Projets'>
         <h1>Mes projets</h1>
         <div className='projetsContainer'>
-          {projects.map((project, index) => (
-            <div key={index} className={project.box} onClick={() => handleOpen(project)}>
-              <div className='headerBox'>
-                <span className='spanDate'>
-                  <p>{project.date}</p>
-                </span>
+  {projects.map((project, index) => (
+    index >= 4 ? (
+      <ScrollAnimation key={index} animateIn="fadeIn" animateOnce={true}>
+        <div className={project.box} onClick={() => handleOpen(project)}>
+          <div className='headerBox'>
+            <span className='spanDate'>
+              <p>{project.date}</p>
+            </span>
 
-                <span className={project.type == 'Personnel' ? 'spanPerso' : 'spanAca'}>
-                  <p>{project.type}</p>
-                </span>
-              </div>
-              <h2>{project.title}</h2>
-              <div className='mainImages'>
-                {project.mainImage.map((image, index) => (
-                  <img key={index} src={'Projets/images' + image} alt={project.title} className={getImageClassName(project.title)} />
-                ))}
-              </div>
-              <p>{project.description}</p>
-            </div>
+            <span className={project.type === 'Personnel' ? 'spanPerso' : 'spanAca'}>
+              <p>{project.type}</p>
+            </span>
+          </div>
+          <h2>{project.title}</h2>
+          <div className='mainImages'>
+            {project.mainImage.map((image, imgIndex) => (
+              <img key={imgIndex} src={'Projets/images' + image} alt={project.title} className={getImageClassName(project.title)} />
+            ))}
+          </div>
+          <p>{project.description}</p>
+        </div>
+      </ScrollAnimation>
+    ) : (
+      <div key={index} className={project.box} onClick={() => handleOpen(project)}>
+        <div className='headerBox'>
+          <span className='spanDate'>
+            <p>{project.date}</p>
+          </span>
+
+          <span className={project.type === 'Personnel' ? 'spanPerso' : 'spanAca'}>
+            <p>{project.type}</p>
+          </span>
+        </div>
+        <h2>{project.title}</h2>
+        <div className='mainImages'>
+          {project.mainImage.map((image, imgIndex) => (
+            <img key={imgIndex} src={'Projets/images' + image} alt={project.title} className={getImageClassName(project.title)} />
           ))}
         </div>
+        <p>{project.description}</p>
+      </div>
+    )
+  ))}
+</div>
+
         <Modal open={open} onClose={handleClose} project={selectedProject} />
       </div>
   

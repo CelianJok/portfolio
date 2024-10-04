@@ -8,6 +8,9 @@
     background-image: url("./images/Fond.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+
 
     .projetsContainer {
         display: flex;
@@ -44,7 +47,7 @@
             padding: calc(1px + 1vmin);
             margin: calc(1px + 2vmin);
             box-shadow: 2px 0px 5px rgba(0,0,0,0.7);
-            background: rgba(0,0,0,0.4);
+            background: rgba(0,0,0,0.5);
             overflow: hidden;
             border-radius: 10px;
             transition: all .2s ease-in-out;
