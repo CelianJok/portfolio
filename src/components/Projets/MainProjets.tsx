@@ -23,6 +23,24 @@ export default function MainProjets({ open, setOpen }: MainProjetsProps) {
     const [selectedProject, setSelectedProject] = React.useState<Project | undefined>();
 
     const projects = [
+        {
+            title: "Ma Route Mon Village",
+            description: "Ma Route Mon Village est un projet d'application mobile développé dans le cadre d'une SAE au sein de l'IUT2 informatique de Grenoble. Le but de cette SAE était de valoriser le patrimoine français. Notre application propose à ses utilisateurs de visiter des villages remarquables situés autour d'un long itinéraire en voiture. Au lieu de faire des arrêts sur des aires d'autoroute, souvent trop peu intéressantes, les vacanciers feraient escale dans ces villages patrimoniaux pour y faire une petite pause. Notre application propose aussi de trier les villages selon les services qu'ils contiennent, comme des restaurants, des hôtels etc. L'itinéraire s'adapterait ainsi selon les villages sélectionnés, et il sera possible pour les utilisateurs d'ouvrir le trajet dans des applications de GPS connus comme Google Maps ou encore Waze. Enfin, il est aussi possible pour l'utilisateur de sélectionner différents types de véhicule qui influenceront le trajet et les services proposés, comme une voiture électrique, une moto ou encore les poids lourds comme les camping-cars.",
+            box: 'smallBox',
+            date: '2025',
+            type: 'Académique',
+            mainImage: ['/Ma Route Mon Village/2.jpg'],
+            images: ['/Ma Route Mon Village/1.jpg', '/Ma Route Mon Village/2.jpg', '/Ma Route Mon Village/3.jpg']
+        },
+        {
+          title: "PrintMyName",
+          description: "PrintMyName est un projet entrepreneurial auquel je participe avec deux de mes amis. Le but est de vendre des étiquettes thermocollantes entièrement personnalisables, principalement aux parents qui ont des enfants en bas âge pour marquer avec leur nom leurs vêtements. J'ai été chargé de concevoir le site web, notamment la page produit avec les éléments personnalisables qui ont été fait en HTML/CSS/JavaScript et à l'aide de la plateforme Shopify. J'ai aussi élaboré l'automatisation de l'impression des étiquettes à partir d'une commande client sur les imprimantes de Seripress, une entreprise d'impression sérigraphique de renommée européenne. Notre site web est entièrement fonctionnel et il est tout à fait possible de commander des étiquettes.",
+          box: 'largeBox',
+          date: '2024',
+          type: 'Entrepreneurial',
+          mainImage: ['/PrintMyName/1.png'],
+          images: ['/PrintMyName/1.png', '/PrintMyName/2.png']
+        },
         { 
             title: "BuJo",
             description: "BuJo est une application mobile sur Android de To-Do List et de journal intime que je développe depuis maintenant 2023. J'ai utilisé comme outils de développement Android Studio couplé avec le langage de programmation Kotlin, le framework natif Jetpack Compose et la bibliothèque Room qui utilise SQLite. BuJo est mon plus gros projet personnel dans le domaine de l'informatique jusqu'à aujourd'hui.",
@@ -82,8 +100,10 @@ export default function MainProjets({ open, setOpen }: MainProjetsProps) {
     const getImageClassName = (title: string) => {
       let className = '';
   
-      if (title === "BuJo" || title === "Ortaf") {
+      if (title === "BuJo" || title === "Ortaf" || title === "Ma Route Mon Village") {
         className = 'image-small ';
+      } else if (title === "PrintMyName") {
+        className = 'image-very-large';
       } else {
         className = 'image-large ';
       }
@@ -105,7 +125,7 @@ export default function MainProjets({ open, setOpen }: MainProjetsProps) {
               <p>{project.date}</p>
             </span>
 
-            <span className={project.type === 'Personnel' ? 'spanPerso' : 'spanAca'}>
+            <span className={project.type === 'Personnel' ? 'spanPerso' : (project.type === 'Entrepreneurial' ? 'spanPro' : 'spanAca')}>
               <p>{project.type}</p>
             </span>
           </div>
@@ -116,6 +136,9 @@ export default function MainProjets({ open, setOpen }: MainProjetsProps) {
             ))}
           </div>
           <p>{project.description}</p>
+          <button className="voirPlusButton">
+            Voir plus
+          </button>
         </div>
       </ScrollAnimation>
     ) : (
@@ -125,7 +148,7 @@ export default function MainProjets({ open, setOpen }: MainProjetsProps) {
             <p>{project.date}</p>
           </span>
 
-          <span className={project.type === 'Personnel' ? 'spanPerso' : 'spanAca'}>
+          <span className={project.type === 'Personnel' ? 'spanPerso' : (project.type === 'Entrepreneurial' ? 'spanPro' : 'spanAca')}>
             <p>{project.type}</p>
           </span>
         </div>
@@ -136,6 +159,10 @@ export default function MainProjets({ open, setOpen }: MainProjetsProps) {
           ))}
         </div>
         <p>{project.description}</p>
+        <button className="voirPlusButton">
+          Voir plus
+        </button>
+
       </div>
     )
   ))}

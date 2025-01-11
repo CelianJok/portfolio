@@ -30,8 +30,12 @@
         flex-wrap: wrap;
         gap: 50px;
 
-        img {
+        .image-normal {
             width: 200px;
+        }
+
+        .image-large {
+            width: 500px;
         }
     }
 
@@ -84,6 +88,11 @@
 
         .spanAca {
             background: rgba(16, 177, 62, 0.4);
+            padding: 5px 15px 5px 15px;
+        }
+
+        .spanPro {
+            background: rgba(255, 128, 0, 0.6);
             padding: 5px 15px 5px 15px;
         }
     }

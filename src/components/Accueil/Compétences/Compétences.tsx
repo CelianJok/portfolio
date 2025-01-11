@@ -92,7 +92,7 @@ function Compétences() {
                     </li>
                     <li>
                         <img src={"Accueil/Compétences/images/Angleterre.png"} alt="Icône du drapeau anglais" />
-                        Anglais : Niveau C1
+                        Anglais : Niveau B2
                     </li>
                     <li>
                         <img src={"Accueil/Compétences/images/Allemagne.jpg"} alt="Icône du drapeau allemand" />

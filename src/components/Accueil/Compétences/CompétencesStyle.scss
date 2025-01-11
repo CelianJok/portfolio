@@ -91,6 +91,8 @@
                     border-radius: 10px;
                     top: 0;
                     left: 0;
+                    animation: progressBar 3s ease-in-out;
+                    animation-fill-mode:both;                 
         
                     &#python {
                         width: 35%;
@@ -98,22 +100,22 @@
                     }
         
                     &#html5 {
-                        width: 60%;
+                        width: 70%;
                         background-color: tomato;
                     }
         
                     &#css3 {
-                        width: 60%;
+                        width: 70%;
                         background-color: dodgerblue;
                     }
         
                     &#java {
-                        width: 50%;
+                        width: 60%;
                         background: linear-gradient(to right, rgb(255, 70, 70), dodgerblue);
                     }
         
                     &#react {
-                        width: 30%;
+                        width: 50%;
                         background: linear-gradient(to right, cyan, dodgerblue);
                     }
 
@@ -123,7 +125,7 @@
                     }
 
                     &#postgresql {
-                        width: 40%;
+                        width: 45%;
                         background: linear-gradient(to right, royalblue, white);
                     }
 
